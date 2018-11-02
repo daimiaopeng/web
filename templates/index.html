@@ -83,7 +83,7 @@
         <tr>
 
         {% for a in list %}
-            <td scope="row"></td>
+            <td scope="row">{{ loop.revindex}}</td>
             <td>{{a['comment']}}</td>
             <!--<td></td>-->
             <td>{{a['createdAt']}}</td>
