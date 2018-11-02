@@ -6,6 +6,7 @@ from flask_bootstrap import Bootstrap
 from flask import make_response
 from flask import render_template
 import leancloud
+import gdbgui
 leancloud.init("2C2xis80wMsTyMrkyi1cQIxG-gzGzoHsz", "sYMaOVyBxA81KTXMXQYwDDIg")
 
 app = Flask(__name__)
@@ -53,4 +54,4 @@ def api():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port = 5005,debug=True)
